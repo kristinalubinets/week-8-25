@@ -11,7 +11,7 @@ var isPalindrome = function(s) {
     return changedS === reversedS;
 };
 
-// or typing out all of the symbols explicitly:
+// or typing out all of the symbols explicitly: (this one is slower)
 
 /**
  * @param {string} s
