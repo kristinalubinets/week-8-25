@@ -1,4 +1,4 @@
-//14. Longest Common Prefix
+//14. Longest Common Prefix 
 
 /**
  * @param {string[]} strs
@@ -17,4 +17,6 @@
     }
     
     return prefix;
-};
+};  
+// iterating over the first string in array (since we're looking for the same prefix in all of the strings)
+// iterate over the rest of the array of strings
