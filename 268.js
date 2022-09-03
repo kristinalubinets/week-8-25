@@ -38,3 +38,19 @@
 };   
 //Time complexity : O(n)
 // Space O(1)
+
+/********************************************* using sums of both indexes and values  ****************************/
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+ var missingNumber = function(nums) {
+    let sumIndex = 0;
+    let sumValues = 0;
+     
+    for(let i = 0; i < nums.length; i++){
+        sumIndex += i+1;
+        sumValues += nums[i];
+    }
+    return sumIndex - sumValues;
+};   
